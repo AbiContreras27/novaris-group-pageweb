@@ -8,7 +8,7 @@ Official website and digital platform for Novaris Group.
 - React
 - NestJS
 - PostgreSQL
-- Prisma
+- TypeORM
 - TailwindCSS
 
 ## Author
