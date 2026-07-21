@@ -1,21 +1,22 @@
-import { Container } from "@/components/ui";
-import { HeroContent } from "./hero-content";
-import { HeroIllustration } from "./hero-illustration";
+import { Container } from "@/components/ui/container";
+import { HeroBackground } from "./heroBackground";
+import { HeroContent } from "./heroContent";
+import { HeroVisual } from "./heroVisual";
+import { ScrollIndicator } from "./scrollIndicator";
 
 export function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#0E0E0E] pt-24"
-    >
+    <section className="relative overflow-hidden min-h-[90vh] flex items-center">
+      <HeroBackground />
 
-      <Container>
-        <div className="relative z-10 grid items-center gap-20 lg:grid-cols-2">
+      <Container className="relative z-10">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
           <HeroContent />
-
-          <HeroIllustration />
+          <HeroVisual />
         </div>
       </Container>
+
+      <ScrollIndicator />
     </section>
   );
 }

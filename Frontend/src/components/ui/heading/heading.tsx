@@ -16,6 +16,7 @@ export function Heading({
     <Component
       className={cn(
         "font-bold tracking-tight text-white",
+        "text-4xl md:text-5xl",
         className
       )}
     >

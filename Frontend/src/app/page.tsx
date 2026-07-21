@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/layout";
-import { Hero, Services } from "@/features/home";
+import { Hero } from "@/features/home/hero";
 
 export default function HomePage() {
   return (
@@ -8,7 +8,6 @@ export default function HomePage() {
 
       <main>
         <Hero />
-        <Services />
       </main>
     </>
   );
