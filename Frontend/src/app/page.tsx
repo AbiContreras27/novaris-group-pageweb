@@ -1,3 +1,4 @@
+import { About } from "@/features/home/about";
 import { Hero } from "@/features/home/hero";
 import { Services } from "@/features/home/services";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Hero />
 
       <Services />
+      
     </>
   );
 }

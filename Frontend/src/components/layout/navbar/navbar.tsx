@@ -7,23 +7,19 @@ import { Button, Container } from "@/components/ui";
 const navigation = [
   {
     label: "Inicio",
-    href: "#hero",
+    href: "/",
   },
   {
     label: "Servicios",
-    href: "#servicios",
+    href: "/servicios",
   },
   {
     label: "Sobre Nosotros",
-    href: "#about",
-  },
-  {
-    label: "¿Por qué elegir Novaris?",
-    href: "#whynovaris",
+    href: "/nosotros",
   },
   {
     label: "Contacto",
-    href: "#contact",
+    href: "/contacto",
   },
 ];
 

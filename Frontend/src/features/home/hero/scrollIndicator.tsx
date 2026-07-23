@@ -25,10 +25,6 @@ export function ScrollIndicator() {
         gap-3
       "
     >
-      <span className="text-xs uppercase tracking-[0.35em] text-zinc-500">
-        Descubre más
-      </span>
-
       <motion.div
         animate={{
           y: [0, 10, 0],
@@ -38,10 +34,6 @@ export function ScrollIndicator() {
           repeat: Infinity,
         }}
       >
-        <ChevronDown
-          className="text-violet-400"
-          size={30}
-        />
       </motion.div>
     </motion.div>
   );
