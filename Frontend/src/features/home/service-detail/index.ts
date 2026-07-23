@@ -1,0 +1,11 @@
+export * from "./serviceBackground";
+export * from "./serviceHero";
+export * from "./serviceOverview";
+export * from "./serviceBenefits";
+export * from "./serviceProcess";
+export * from "./serviceTechnologies";
+export * from "./serviceCTA";
+export * from "./serviceDetail";
+
+export * from "./serviceDetailConstants";
+export * from "./serviceDetailTypes";
