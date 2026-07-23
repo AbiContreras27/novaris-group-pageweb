@@ -6,8 +6,8 @@ import { ScrollIndicator } from "./scrollIndicator";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center">
-      <HeroBackground />
+    <section className="relative flex min-h-screen items-center overflow-hidden pt-24 lg:pt-28">
+     <HeroBackground />
 
       <Container className="relative z-10">
         <div className="grid items-center gap-16 lg:grid-cols-2">

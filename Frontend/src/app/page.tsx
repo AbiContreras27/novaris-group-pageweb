@@ -1,14 +1,12 @@
-import { Navbar } from "@/components/layout";
 import { Hero } from "@/features/home/hero";
+import { Services } from "@/features/home/services";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <>
-      <Navbar />
+      <Hero />
 
-      <main>
-        <Hero />
-      </main>
+      <Services />
     </>
   );
 }
