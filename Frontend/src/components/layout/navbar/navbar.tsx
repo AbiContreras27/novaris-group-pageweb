@@ -11,15 +11,15 @@ const navigation = [
   },
   {
     label: "Servicios",
-    href: "#services",
+    href: "#servicios",
   },
   {
-    label: "Nosotros",
+    label: "Sobre Nosotros",
     href: "#about",
   },
   {
-    label: "Portafolio",
-    href: "#portfolio",
+    label: "¿Por qué elegir Novaris?",
+    href: "#whynovaris",
   },
   {
     label: "Contacto",

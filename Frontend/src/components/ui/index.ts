@@ -1,5 +1,5 @@
 export * from "./button";
-export * from "./container/container";
+export * from "./container";
 export * from "./card";
 export * from "./section";
 export * from "./heading";

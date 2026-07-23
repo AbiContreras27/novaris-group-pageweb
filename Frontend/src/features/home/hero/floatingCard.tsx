@@ -1,24 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LucideIcon } from "lucide-react";
-
-interface FloatingCardProps {
-  icon: LucideIcon;
-  title: string;
-  subtitle: string;
-  delay?: number;
-}
+import type { FloatingCardData } from "./heroTypes";
 
 export function FloatingCard({
   icon: Icon,
   title,
   subtitle,
   delay = 0,
-}: FloatingCardProps) {
+}: FloatingCardData) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: 1,
         y: [0, -10, 0],
@@ -30,27 +23,30 @@ export function FloatingCard({
         ease: "easeInOut",
       }}
       className="
-        flex
-        items-center
-        gap-4
+        flex items-center gap-4
         rounded-2xl
-        border
-        border-white/10
+        border border-white/10
         bg-white/5
+        px-5 py-4
         backdrop-blur-xl
-        px-5
-        py-4
         shadow-xl
       "
     >
-      <div className="rounded-xl bg-violet-500/20 p-3">
-        <Icon className="text-violet-400" size={22} />
+      <div className="rounded-xl bg-[#3E003F]/20 p-3">
+        <Icon
+          size={22}
+          className="text-violet-400"
+        />
       </div>
 
       <div>
-        <p className="text-sm text-zinc-400">{subtitle}</p>
+        <p className="text-sm text-zinc-400">
+          {subtitle}
+        </p>
 
-        <h4 className="font-semibold text-white">{title}</h4>
+        <h4 className="font-semibold text-white">
+          {title}
+        </h4>
       </div>
     </motion.div>
   );

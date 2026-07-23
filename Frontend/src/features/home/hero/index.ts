@@ -5,7 +5,9 @@ export * from "./heroBadge";
 export * from "./heroButtons";
 export * from "./heroContent";
 export * from "./heroHighlights";
-
 export * from "./heroVisual";
 export * from "./floatingCard";
 export * from "./scrollIndicator";
+
+export * from "./heroConstants";
+export * from "./heroTypes";
