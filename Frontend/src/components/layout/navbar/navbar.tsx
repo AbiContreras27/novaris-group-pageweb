@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { MessageCircle } from "lucide-react";
 
 import { Button, Container } from "@/components/ui";
 
@@ -31,13 +33,17 @@ export function Navbar() {
 
         <Container>
 
-          <nav className="flex h-24 items-center justify-between">
+          <nav className="flex h-26 items-center justify-between">
 
-            <Link
-              href="/"
-              className="text-2xl font-bold tracking-tight text-white transition-colors hover:text-[#7C5CFF]"
-            >
-              NOVARIS
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo-novaris.png"
+                alt="Novaris Group"
+                width={800}
+                height={180}
+                priority
+                className="h-20 w-auto"
+              />
             </Link>
 
             <ul className="hidden items-center gap-10 lg:flex">
@@ -62,10 +68,19 @@ export function Navbar() {
 
             </ul>
 
-            <Button>
-              Hablemos
-              
-            </Button>
+            <div className="flex items-center gap-4">
+
+            <Link
+              href="https://wa.me/573214589943"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="flex items-center gap-2">
+                <MessageCircle size={18} />
+                Hablemos
+              </Button>
+            </Link>
+          </div>
 
           </nav>
 

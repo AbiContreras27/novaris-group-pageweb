@@ -11,6 +11,12 @@ export const soporteTecnico: ServiceDetailData = {
     description:
         "Nuestro equipo especializado brinda asistencia técnica para estaciones de trabajo, servidores, infraestructura tecnológica y usuarios finales, asegurando tiempos de respuesta rápidos y una operación estable.",
 
+    seo: {
+        title: "Soporte técnico",
+        description:
+            "Nuestro equipo especializado brinda asistencia técnica para estaciones de trabajo, servidores, infraestructura tecnológica y usuarios finales, asegurando tiempos de respuesta rápidos y una operación estable.",
+    },
+
     icon: "support",
 
     benefits: [

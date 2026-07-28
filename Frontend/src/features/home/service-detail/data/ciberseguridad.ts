@@ -11,6 +11,11 @@ export const ciberseguridad: ServiceDetailData = {
     description:
         "Implementamos soluciones de seguridad informática que reducen riesgos, fortalecen la continuidad del negocio y garantizan el cumplimiento de buenas prácticas internacionales.",
 
+    seo: {
+        title: "Protección de tus datos",
+        description:
+            "manejamos procesos de verificación en tus computadores para impulsar la seguridad de los datos en tu empresa.",
+    },
     icon: "shield",
 
     benefits: [

@@ -11,6 +11,12 @@ export const consultoriaTI: ServiceDetailData = {
     description:
         "Acompañamos a las organizaciones en la toma de decisiones estratégicas relacionadas con infraestructura tecnológica, modernización de procesos, cloud computing y gobierno de TI.",
 
+    seo: {
+        title: "consultas de tecnología",
+        description:
+            "Acompañamos a las organizaciones en la toma de decisiones estratégicas relacionadas con infraestructura tecnológica",
+    },
+
     icon: "briefcase",
 
     benefits: [
