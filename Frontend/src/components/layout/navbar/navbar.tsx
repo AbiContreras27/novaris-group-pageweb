@@ -33,16 +33,12 @@ export function Navbar() {
 
           <nav className="flex h-24 items-center justify-between">
 
-            {/* Logo */}
-
             <Link
               href="/"
               className="text-2xl font-bold tracking-tight text-white transition-colors hover:text-[#7C5CFF]"
             >
               NOVARIS
             </Link>
-
-            {/* Menú Desktop */}
 
             <ul className="hidden items-center gap-10 lg:flex">
 
@@ -66,10 +62,9 @@ export function Navbar() {
 
             </ul>
 
-            {/* CTA */}
-
             <Button>
               Hablemos
+              
             </Button>
 
           </nav>
