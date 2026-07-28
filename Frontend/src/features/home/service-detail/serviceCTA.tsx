@@ -74,7 +74,7 @@ export function ServiceCTA({
             </Link>
 
             <Link
-              href="https://wa.me/57214589943"
+              href="https://wa.me/573214589943"
               target="_blank"
               className="
                 inline-flex
