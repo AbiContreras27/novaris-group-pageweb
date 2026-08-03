@@ -11,6 +11,11 @@ export const cctv: ServiceDetailData = {
     description:
         "Diseñamos e implementamos sistemas de CCTV con cámaras IP, control de acceso e integración con infraestructura tecnológica para garantizar la seguridad de su organización.",
 
+    seo: {
+        title: "Instalacion de camaras de vigilancia",
+        description:
+            "instalamos un sistema CCTV para darle una opcion de seguridad extra de tu empresa.",
+    },
     icon: "camera",
 
     benefits: [

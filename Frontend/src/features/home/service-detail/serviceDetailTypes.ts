@@ -30,6 +30,11 @@ export interface ServiceDetailData {
 
     description: string;
 
+    seo: {
+        title: string;
+        description: string;
+    };
+
     icon: ServiceIcon;
 
     image?: string;

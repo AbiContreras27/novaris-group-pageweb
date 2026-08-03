@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 
 import { Button, Container } from "@/components/ui";
+import { MobileMenu } from "./mobileMenu";
 
 const navigation = [
   {
@@ -35,9 +38,16 @@ export function Navbar() {
 
             <Link
               href="/"
-              className="text-2xl font-bold tracking-tight text-white transition-colors hover:text-[#7C5CFF]"
+              className="flex items-center"
             >
-              NOVARIS
+              <Image
+                src="/logoNovaris.png"
+                alt="Novaris Group"
+                width={700}
+                height={220}
+                priority
+                className="h-16 w-auto"
+              />
             </Link>
 
             <ul className="hidden items-center gap-10 lg:flex">
@@ -62,16 +72,34 @@ export function Navbar() {
 
             </ul>
 
-            <Button>
-              Hablemos
-              
-            </Button>
+
+            <div className="flex items-center gap-4">
+
+              <div className="hidden lg:block">
+
+                <Link
+                  href="https://wa.me/573214589943"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="flex items-center gap-2">
+                    <MessageCircle size={18} />
+                    Hablemos
+                  </Button>
+                </Link>
+
+              </div>
+
+              <MobileMenu />
+
+            </div>
 
           </nav>
 
         </Container>
 
       </div>
+
     </header>
   );
 }

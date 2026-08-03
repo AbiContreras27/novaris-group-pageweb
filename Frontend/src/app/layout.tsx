@@ -120,9 +120,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className={poppins.variable}>
-        <Navbar/>
-        {children}
-        <Footer/>
+        
+          <Navbar/>
+          {children}
+          <Footer/>
+        
       </body>
     </html>
   );

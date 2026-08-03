@@ -11,6 +11,11 @@ export const desarrolloSoftware: ServiceDetailData = {
     description:
         "En Novaris Group desarrollamos aplicaciones web, plataformas empresariales, APIs, sistemas administrativos e integraciones modernas utilizando tecnologías de última generación para impulsar la transformación digital de nuestros clientes.",
 
+    seo: {
+        title: "Desarrollo de Software Empresarial",
+        description:
+            "Creamos aplicaciones web, sistemas empresariales y soluciones digitales modernas para impulsar el crecimiento de tu empresa.",
+    },
     icon: "code",
 
     benefits: [
@@ -35,6 +40,7 @@ export const desarrolloSoftware: ServiceDetailData = {
                 "Reducimos tareas repetitivas mediante procesos inteligentes.",
         },
     ],
+
 
     process: [
         {

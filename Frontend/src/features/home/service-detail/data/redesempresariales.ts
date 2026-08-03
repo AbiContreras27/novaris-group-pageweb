@@ -11,6 +11,12 @@ export const redesEmpresariales: ServiceDetailData = {
     description:
         "Construimos soluciones de conectividad adaptadas a las necesidades de cada organización, garantizando disponibilidad, estabilidad y seguridad en la comunicación de datos.",
 
+    seo: {
+        title: "Redes empresariales y de hogar",
+        description:
+            "Construimos soluciones de conectividad adaptadas a las necesidades de cada organización",
+    },
+
     icon: "network",
 
     benefits: [
