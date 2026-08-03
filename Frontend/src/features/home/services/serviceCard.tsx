@@ -18,6 +18,7 @@ export function ServiceCard({
 }: ServiceCardProps) {
   const Icon = SERVICE_ICONS[service.icon];
 
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}
@@ -45,7 +46,6 @@ export function ServiceCard({
         hover:shadow-[0_0_40px_rgba(139,92,246,.15)]
       "
     >
-      {/* Glow */}
 
       <div
         className="
@@ -76,8 +76,6 @@ export function ServiceCard({
 
       <div className="relative z-10 flex h-full flex-col p-8">
 
-        {/* Icono */}
-
         <div
           className="
             mb-6
@@ -100,19 +98,13 @@ export function ServiceCard({
           />
         </div>
 
-        {/* Título */}
-
         <h3 className="text-2xl font-semibold text-white">
           {service.title}
         </h3>
 
-        {/* Descripción */}
-
         <p className="mt-4 leading-7 text-zinc-400">
           {service.shortDescription}
         </p>
-
-        {/* Características */}
 
         <ul className="mt-8 space-y-3">
           {service.features.map((feature) => (
@@ -130,11 +122,7 @@ export function ServiceCard({
           ))}
         </ul>
 
-        {/* Empuja el botón hacia abajo */}
-
         <div className="flex-1" />
-
-        {/* Botón */}
 
         <Link
           href={`/servicios/${service.slug}`}

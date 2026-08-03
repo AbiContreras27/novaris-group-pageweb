@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 import { Button, Container } from "@/components/ui";
+import { MobileMenu } from "./mobileMenu";
 
 const navigation = [
   {
@@ -33,16 +34,19 @@ export function Navbar() {
 
         <Container>
 
-          <nav className="flex h-26 items-center justify-between">
+          <nav className="flex h-24 items-center justify-between">
 
-            <Link href="/" className="flex items-center">
+            <Link
+              href="/"
+              className="flex items-center"
+            >
               <Image
-                src="/logo-novaris.png"
+                src="/logoNovaris.png"
                 alt="Novaris Group"
-                width={800}
-                height={180}
+                width={700}
+                height={220}
                 priority
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 
@@ -68,25 +72,34 @@ export function Navbar() {
 
             </ul>
 
+
             <div className="flex items-center gap-4">
 
-            <Link
-              href="https://wa.me/573214589943"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="flex items-center gap-2">
-                <MessageCircle size={18} />
-                Hablemos
-              </Button>
-            </Link>
-          </div>
+              <div className="hidden lg:block">
+
+                <Link
+                  href="https://wa.me/573214589943"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="flex items-center gap-2">
+                    <MessageCircle size={18} />
+                    Hablemos
+                  </Button>
+                </Link>
+
+              </div>
+
+              <MobileMenu />
+
+            </div>
 
           </nav>
 
         </Container>
 
       </div>
+
     </header>
   );
 }
